@@ -8,7 +8,9 @@ def pole_figury(*args):
 			elif len(*args) == 2:
 				return num[0] * num[1]
 			elif len(*args) == 3:
-				return (num[0] * num[1]) / 2
+				p = (num[0] + num[1] + num[2]) / 2
+				pole = mt.sqrt(p*(p-num[0])*(p-num[1])*(p-num[2]))
+				return pole
 		
 
 liczba_figur = int(input())
